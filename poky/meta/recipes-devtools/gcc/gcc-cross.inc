@@ -43,6 +43,7 @@ EXTRA_OECONF_PATHS = "\
 
 ARCH_FLAGS_FOR_TARGET += "-isystem${STAGING_DIR_TARGET}${target_includedir}"
 
+EXTRA_OECONF:append = " --enable-obsolete"
 
 do_configure:prepend () {
 	install -d ${RECIPE_SYSROOT}${target_includedir}

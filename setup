@@ -65,9 +65,9 @@ machine() {
             if [ ! -e "$tmpl/templates/default/bblayers.conf.sample" ]; then
                 continue
             fi
-            if ! grep -q "##OEROOT##/meta-phosphor" "$tmpl/templates/default/bblayers.conf.sample"; then
-                continue
-            fi
+         #   if ! grep -q "##OEROOT##/meta-phosphor" "$tmpl/templates/default/bblayers.conf.sample"; then
+         #       continue
+         #   fi
         fi
 
         # If a target is specified, then check for a match,
